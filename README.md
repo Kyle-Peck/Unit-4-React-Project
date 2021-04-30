@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+SOURCE:
+https://www.youtube.com/watch?v=w7ejDZ8SWv8&t=1214s
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# DO NOT CODE SECTIONS
 
-## Available Scripts
+ALL OF THE PARTS THAT ARE COMMENTED OUT ARE THE TEACHER ANSWERS FOR THE STUDENT PROJECT AT THE
 
-In the project directory, you can run:
+## Set Up
 
-### `npm start`
+fix the SCSS formatter in the settings
+/src/css/style.css
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Add to the style sheet as you go.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- delete the files
+  App.css
+  index.css
+  logo.svg
+  setupTest.js
+  App.test.js
+- create the files
+  style.scss
 
-### `npm test`
+- delete the work in the App.js file
+- create a container class in a div around all of your work
+- update the scss file
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+.container{
+max-width: 500px;
+margin: 30px auto;
+overflow: auto;
+min-height: 300px;
+border: 1px solid steelblue;
+padding:30px;
+border-radius: 5px;
+}
 
-### `npm run build`
+## Intro to react
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- add a smaller header in the app to show how it compiles and runs
+- make sure to show errors and work though them
+- talk about imports
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Intro to Components
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- create a components folder
+- create a Header.js file, this needs to be capitalized.
+- add Header to your App.js, make sure you import it
+- fill in the header
+- make sure you mess around showing ternaries and arrow functions as much as needed
 
-### `npm run eject`
+## Props
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- This is the short work for properties
+- props should ALWAYS be at the top level so that they can be used on other props
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Header
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Button
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Tasks
 
-## Learn More
+- this the container that will be used to map every task. it should go through the array of every task and pass it through
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Task // renamed to ListItem, task vs tasks were super confusing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- in order to use the FaTimes (font awesome mulitply "x") you to install react icons
+- npm i react-icons
 
-### Code Splitting
+## useState
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- install the extension called ES7 React/Redux ... by dsznajder
 
-### Analyzing the Bundle Size
+## DeleteTask
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- added the delete task on app js and then passed i through the taks as an ondelete prop
 
-### Making a Progressive Web App
+# Student Project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## this is very hard but thats intentional
 
-### Advanced Configuration
+### frame it in professionalism, When they get their first job they are likely going to be asked to do something that they are not 100% comfortable with and they need to be able to stick with it and learn better.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- The students will be required to create an edit task section to the app.
+- there are a lot of ways to get this done but here is 1 answer

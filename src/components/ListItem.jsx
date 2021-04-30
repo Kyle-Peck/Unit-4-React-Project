@@ -1,5 +1,5 @@
 import { FaTimes } from "react-icons/fa";
-import { ImPencil } from "react-icons/im";
+// import { ImPencil } from "react-icons/im";
 import AddTask from "./AddTask";
 
 const ListItem = ({ task, onDelete, onToggle, toggleEdit }) => {
@@ -19,10 +19,10 @@ const ListItem = ({ task, onDelete, onToggle, toggleEdit }) => {
           onClick={() => onDelete(task.id)}
           style={{ color: "red", cursor: "pointer" }}
         />
-        <ImPencil
+        {/* <ImPencil
           onClick={() => toggleEdit(task)}
           style={{ color: "green", cursor: "pointer" }}
-        />
+        /> */}
       </div>
     </div>
   );

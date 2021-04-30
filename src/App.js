@@ -2,15 +2,13 @@ import Header from "./components/Header";
 import Tasks from "./components/Tasks";
 //imrs
 import React, { useState } from "react";
-import EditTask from "./components/EditTask";
+// import EditTask from "./components/EditTask";
 import AddTask from "./components/AddTask";
 
 const App = () => {
   const [showAddTask, setShowAddTask] = useState(false);
-  const [showEditTask, setShowEditTask] = useState(false);
-  const [newTask, setNewTask] = useState({});
-
-  const [none, setNone] = useState(0);
+  // const [showEditTask, setShowEditTask] = useState(false);
+  // const [newTask, setNewTask] = useState({});
   const [tasks, setTasks] = useState([
     {
       id: 1,
@@ -50,25 +48,21 @@ const App = () => {
     setTasks([...tasks, task]);
   };
 
-  const onEdit = (editedTask, id) => {
-    setTasks(tasks.map((task) => (task.id === id ? editedTask : task)));
-    setShowEditTask(false);
-    console.log(tasks);
-  };
+  // const onEdit = (editedTask, id) => {
+  //   setTasks(tasks.map((task) => (task.id === id ? editedTask : task)));
+  //   setShowEditTask(false);
+  //   console.log(tasks);
+  // };
 
-  const toggleEdit = (task) => {
-    setShowEditTask(!showEditTask);
-    setShowAddTask(false);
-    setNewTask(task);
-    console.log(task);
-    setTimeout(() => {
-      setNone(0);
-      console.log(none);
-    }, 1000);
-  };
-
-  // const updateTask = (newTask) => {
-  //   tasks.map((task) => (newTask.id === task.id ? newTask : task));
+  // const toggleEdit = (task) => {
+  //   setShowEditTask(!showEditTask);
+  //   setShowAddTask(false);
+  //   setNewTask(task);
+  //   console.log(task);
+  //   setTimeout(() => {
+  //     setNone(0);
+  //     console.log(none);
+  //   }, 1000);
   // };
 
   return (
@@ -76,23 +70,23 @@ const App = () => {
       <Header
         onShowAdd={() => {
           setShowAddTask(!showAddTask);
-          setShowEditTask(false);
+          // setShowEditTask(false);
         }}
         showAdd={showAddTask}
       />
 
       {showAddTask && <AddTask onAdd={onAdd} btnText="Save Task" />}
-      {showEditTask && (
+      {/* {showEditTask && (
         <EditTask
           onEdit={onEdit}
           newTask={newTask}
           btnText="Apply Changes"
           color="green"
         />
-      )}
+      )} */}
 
       <Tasks
-        toggleEdit={toggleEdit}
+        // toggleEdit={toggleEdit}
         tasks={tasks}
         onDelete={onDelete}
         onToggle={toggleReminder}
