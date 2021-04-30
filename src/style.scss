@@ -1,0 +1,100 @@
+//main Styles
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  transition: all 0.5s;
+}
+
+//body styles
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+// Header Component Styles
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  button {
+    height: 30px;
+    width: 70px;
+    background-color: darkred;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 15px;
+  }
+}
+
+//Item Components
+
+.item {
+  background-color: #eee;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &.remind {
+    border-left: solid 5px green;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+//AddTask Styles
+
+.taskForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+  width: 100%;
+  font-size: 1.35rem;
+
+  .formInput {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+  }
+
+  .formCheck {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: 5px 0;
+  }
+
+  .btn {
+    height: 30px;
+    width: 70%;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.1rem;
+  }
+
+  input {
+    font-size: 1.1rem;
+  }
+}
